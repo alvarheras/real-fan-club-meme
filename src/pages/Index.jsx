@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Heading, Image, Link, Text, VStack, useBreakpointValue } from "@chakra-ui/react";
-import { FaInstagram, FaTelegramPlane, FaGlobe } from "react-icons/fa";
+import { FaInstagram, FaTelegramPlane, FaGlobe, FaTwitter } from "react-icons/fa";
 
 const Index = () => {
   const textSize = useBreakpointValue({ base: 'md', md: 'xl' });
@@ -30,18 +30,18 @@ const Index = () => {
             $REAL Madrid memecoin on the solana blockchain. Best coin in best blockchain! Memecoin not affiliated with the club in any way!
           </Text>
           <Flex direction={{ base: 'column', sm: 'row' }} gap={{ base: 3, sm: 4 }} align="center">
-            <Link href="https://instagram.com/localcardshop_" isExternal>
-              <Button leftIcon={<FaInstagram />} variant="outline" colorScheme="white" color="blue.500" borderColor="blue.500">
-                Follow us on Instagram
+            <Link href="https://twitter.com/FCREALMADRIDSOL" isExternal>
+              <Button leftIcon={<FaTwitter />} variant="outline" colorScheme="white" color="white" borderColor="white">
+                Follow us on X
               </Button>
             </Link>
-            <Link href="https://telegram.org" isExternal>
-              <Button leftIcon={<FaTelegramPlane />} variant="outline" colorScheme="white" color="blue.500" borderColor="blue.500">
+            <Link href=" https://t.me/RealMadridSolanaPortal" isExternal>
+              <Button leftIcon={<FaTelegramPlane />} variant="outline" colorScheme="white" color="white" borderColor="white">
                 Join Telegram
               </Button>
             </Link>
-            <Link href="https://dexscreener.com" isExternal>
-              <Button leftIcon={<FaGlobe />} variant="outline" colorScheme="white" color="blue.500" borderColor="blue.500">
+            <Link href="https://dexscreener.com/solana/2zqimwtryrkwkjzfmwmwou3uwyujzgsaosdvxchcyacl" isExternal>
+              <Button leftIcon={<FaGlobe />} variant="outline" colorScheme="white" color="white" borderColor="white">
                 View in Dexscreen
               </Button>
             </Link>
