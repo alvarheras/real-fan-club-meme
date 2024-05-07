@@ -1,33 +1,57 @@
-// Complete the Index page component for Big Rob Memecoin
-import { Box, Button, Container, Flex, Heading, Image, Link, Text, VStack } from "@chakra-ui/react";
-import { FaInstagram, FaRocket } from "react-icons/fa";
+import { Box, Button, Flex, Heading, Image, Link, Text, VStack, useBreakpointValue } from "@chakra-ui/react";
+import { FaInstagram, FaTelegramPlane, FaGlobe } from "react-icons/fa";
 
 const Index = () => {
+  const textSize = useBreakpointValue({ base: 'md', md: 'xl' });
+  const headingSize = useBreakpointValue({ base: 'xl', md: '2xl' });
+
   return (
-    <Container maxW="container.xl">
-      <Flex direction="column" align="center" justify="center" minHeight="100vh" padding={4}>
-        <VStack spacing={8}>
-          <Image borderRadius="full" boxSize="150px" src="https://via.placeholder.com/150?text=R" alt="Big Rob Coin Logo" />
-          <Heading as="h1" size="2xl" textAlign="center">
-            Big Rob Coin
+    <Box height="100vh" width="100vw" padding="0">
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+        minHeight="100vh"
+        padding={0}
+        bgImage="url('https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--859d7ffa-751b-4ca5-a636-4d83642b2c32/_330838956259.app.png?preferwebp=true')"
+        bgPos="center"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        position="relative"
+        width="full"
+      >
+        <Box position="absolute" top="0" right="0" bottom="0" left="0" bg="blackAlpha.800" zIndex="0" />
+        <VStack spacing={8} zIndex={1} width="full" px={4}>
+          <Image src="/real.png" boxSize={{ base: "150px", sm: "200px", md: "250px" }} alt="Big Rob Coin Logo" />
+          <Heading as="h1" size={headingSize} textAlign="center" my={4} color="white" mx="auto" maxW="90%">
+            $REAL | Real Madrid FC
           </Heading>
-          <Text fontSize="xl" textAlign="center">
-            Join the revolution of meme investing with Big Rob Coin. The future of fun finance!
+          <Text fontSize={textSize} textAlign="center" mb={4} fontWeight="bold" color="white" mx="auto" maxW="90%">
+            $REAL Madrid memecoin on the solana blockchain. Best coin in best blockchain! Memecoin not affiliated with the club in any way!
           </Text>
-          <Button rightIcon={<FaRocket />} colorScheme="purple" size="lg">
-            Buy Big Rob Coin
-          </Button>
-          <Link href="https://instagram.com/localcardshop_" isExternal color="blue.500">
-            <Button leftIcon={<FaInstagram />} variant="outline" colorScheme="blue">
-              Follow us on Instagram
-            </Button>
-          </Link>
-          <Text fontSize="sm" textAlign="center" color="gray.600">
+          <Flex direction={{ base: 'column', sm: 'row' }} gap={{ base: 3, sm: 4 }} align="center">
+            <Link href="https://instagram.com/localcardshop_" isExternal>
+              <Button leftIcon={<FaInstagram />} variant="outline" colorScheme="white" color="blue.500" borderColor="blue.500">
+                Follow us on Instagram
+              </Button>
+            </Link>
+            <Link href="https://telegram.org" isExternal>
+              <Button leftIcon={<FaTelegramPlane />} variant="outline" colorScheme="white" color="blue.500" borderColor="blue.500">
+                Join Telegram
+              </Button>
+            </Link>
+            <Link href="https://dexscreener.com" isExternal>
+              <Button leftIcon={<FaGlobe />} variant="outline" colorScheme="white" color="blue.500" borderColor="blue.500">
+                View in Dexscreen
+              </Button>
+            </Link>
+          </Flex>
+          <Text fontSize="sm" textAlign="center" color="white" mt={4} mx="auto" maxW="90%">
             Disclaimer: Cryptocurrencies are a highly volatile investment. Do your own research before investing.
           </Text>
         </VStack>
       </Flex>
-    </Container>
+    </Box>
   );
 };
 
