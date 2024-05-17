@@ -30,7 +30,7 @@ const Index = () => {
             $REAL Madrid memecoin on the solana blockchain. Best coin in best blockchain! Memecoin not affiliated with the club in any way!
           </Text>
           <Flex direction={{ base: 'column', sm: 'row' }} gap={{ base: 3, sm: 4 }} align="center">
-            <Link href="https://twitter.com/FCREALMADRIDSOL" isExternal>
+            <Link href="https://twitter.com/realmadridonsol" isExternal>
               <Button leftIcon={<FaTwitter />} variant="outline" colorScheme="white" color="white" borderColor="white">
                 Follow us on X
               </Button>
