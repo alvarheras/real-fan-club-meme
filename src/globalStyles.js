@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 * {
   scrollbar-width: thin;
@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: rgba(155, 155, 155, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   border: transparent;
 }
@@ -31,6 +31,8 @@ export const Container = styled.div`
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 30px;
+  padding-bottom:30px;
   padding-right: 50px;
   padding-left: 50px;
   @media screen and (max-width: 991px) {
@@ -41,7 +43,7 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
+  background: ${({ primary }) => (primary ? '#00215E' : '#0467FB')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
   color: #fff;

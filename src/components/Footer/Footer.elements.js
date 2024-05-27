@@ -3,7 +3,7 @@ import { FaMagento } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
+  background-color: #1a1a1a;
   padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
@@ -124,6 +124,7 @@ export const SocialMediaWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
   width: 90%;
   max-width: 1000px;
   margin: 40px auto 0 auto;
@@ -137,6 +138,7 @@ export const SocialLogo = styled(Link)`
   color: #fff;
   justify-self: start;
   cursor: pointer;
+  font-weight: bold;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
@@ -149,7 +151,9 @@ export const SocialLogo = styled(Link)`
   }
 `;
 
-export const SocialIcon = styled(FaMagento)`
+export const SocialIcon = styled.img`
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 `;
 

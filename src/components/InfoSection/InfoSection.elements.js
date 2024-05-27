@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+export const lightBg = '#f9f9f9';
 
 
 export const InfoSec = styled.div`
     color: #fff;
-    padding: 160px 0;
-    background: ${({lightBg}) => (lightBg ? '#fff' : '#101522')};
+    padding: 20px 0;
+    background: #1a1a1a; /* Cambia el color a un gris oscuro */
 `
 
 export const InfoRow = styled.div`
@@ -55,17 +56,18 @@ export const TextWrapper = styled.div`
 
 export const ImgWrapper = styled.div`
   max-width: 555px;
+  width: 100%;
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
 
 export const TopLine = styled.div`
   color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 28px;
+  margin-top:10px;
   font-weight: 700;
   letter-spacing: 1.4px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 `;
 
 export const Img = styled.img`
@@ -75,20 +77,20 @@ export const Img = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
+  width:100%;
 `;
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
+  font-size: 58px;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
 `;
 
 export const Subtitle = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 24px;
   line-height: 24px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
 `;

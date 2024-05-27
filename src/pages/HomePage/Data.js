@@ -4,13 +4,12 @@ export const homeObjOne = {
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Marketing Agency',
-    headline: 'Lead Generation Specialist for Online Businesses',
-    description:
-      'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
-    buttonLabel: 'Get Started',
+    topLine: 'Original fan token for Real Madrid fans',
+    headline: 'Kings of Europe, fueled by $REAL fans',
+    description: 'Elevate your game with $REAL token: empowering fans, igniting team spirit, and chart-topping success.',
+    buttonLabel: 'Buy $REAL',
     imgStart: '',
-    img: require('../../images/svg-1.svg'),
+    img: require('../../images/gif4.gif'),
     alt: 'Credit Card',
     start: ''
   };
@@ -26,26 +25,26 @@ export const homeObjOne = {
     description:
       "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
     buttonLabel: 'Learn More',
-    imgStart: '',
-    img: require('../../images/svg-2.svg'),
+    imgStart: 'true',
+    img: require('../../images/vini.gif'),
     alt: 'Vault',
-    start: ''
+    start: 'true'
   };
   
   export const homeObjThree = {
-    primary: false,
-    lightBg: true,
-    lightTopLine: false,
-    lightText: false,
-    lightTextDesc: false,
+    primary: true,
+    lightBg: false,
+    lightTopLine: true,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'Sarah Jeni',
-    headline:
-      'Ultra helped me increase my revenue by over 3X in less than 3 months!',
-    description:
-      "Their team is wonderful! I can't believe I didn't start working with them earlier.",
-    buttonLabel: 'View Case Study',
+
+    topLine: 'More than a token, its a legend',
+    headline: 'WE ARE CTO!',
+    description: "Get $REAL to back Real Madrid in the Champions League finals and make your support felt on and off the pitch - let's dominate the field and the charts!",
+    buttonLabel: 'Join Telegram',
     imgStart: 'start',
-    img: require('../../images/profile.jpg'),
+    img: require('../../images/vini.gif'),
     alt: 'Vault',
     start: 'true'
   };

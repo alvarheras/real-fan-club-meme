@@ -1,10 +1,8 @@
-import React from 'react'
-import {InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img} from './InfoSection.elements'
-import { Container, Button } from '../../globalStyles'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img } from './InfoSection.elements';
+import { Container, Button } from '../../globalStyles';
 
- const InfoSection = ({ 
-    
+const InfoSection = ({ 
     primary,
     lightBg,
     topLine,
@@ -26,26 +24,26 @@ import { Link } from 'react-router-dom'
                     <InfoRow imgStart={imgStart}>
                         <InfoColumn>
                             <TextWrapper>
-                            <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-                            <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                            <Link to='/sign-up'>
-                            <Button big fontBig primary={primary}>
-                                {buttonLabel}
-                            </Button>
-                            </Link>
+                                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+                                <Heading lightText={lightText}>{headline}</Heading>
+                                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                                <a href='https://raydium.io/swap/?inputMint=sol&outputMint=8s1w3Lrjh2w73V9nCCEnh2NUgMqV1cV451c74UDsc5kc' target="_blank" rel="noopener noreferrer">
+                                    <Button big fontBig primary={primary}>
+                                        {buttonLabel}
+                                    </Button>
+                                </a>
                             </TextWrapper>
                         </InfoColumn>
                         <InfoColumn>
-                        <ImgWrapper start={start}>
-                            <Img src={img} alt={alt} />
-                        </ImgWrapper>
+                            <ImgWrapper start={start}>
+                                <Img src={img} alt={alt} />
+                            </ImgWrapper>
                         </InfoColumn>
                     </InfoRow>
                 </Container>
             </InfoSec>
         </>
-    )
+    );
 }
 
 export default InfoSection;
